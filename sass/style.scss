@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 20px;
+  background-color: lightgrey;
+}
+
+.nav_bar {
+  background-color: lightgray;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
+
+  #nav_logo {
+    height: 100px;
+  }
+
+  ul {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    top: 50px;
+
+    li {
+      margin: 0;
+
+      a {
+        position: relative;
+        text-decoration: none;
+        color: black;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -4px;
+          width: 0%;
+          height: 2px;
+          background: black;
+          transition: 0.3s;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  #btn {
+    height: 30px;
+    width: 100px;
+    border: solid blue 1px;
+    position: absolute;
+    right: -290px;
+    top: -9.9px;
+    background-color: aliceblue;
+  }
+}
+
+#hero_section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+
+  .hero {
+    color: black;
+    padding-top: 10px;
+    position: absolute;
+    bottom: 70%;
+    right: 0;
+  }
+}
+
+.texto_img {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  .perfil_img {
+    #imagen_ejemplo {
+      margin-left: 190px;
+      width: 300px;
+      height: 500px;
+    }
+  }
+
+  .texto {
+    // vacío por ahora
+  }
+}
