@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420">
+  <rect width="600" height="420" rx="36" fill="#fff7ee" />
+  <circle cx="168" cy="164" r="86" fill="#14556b" />
+  <circle cx="248" cy="164" r="86" fill="#f28c45" opacity="0.88" />
+  <rect x="338" y="92" width="170" height="24" rx="12" fill="#22313a" />
+  <rect x="338" y="138" width="140" height="18" rx="9" fill="#14556b" opacity="0.3" />
+  <rect x="338" y="174" width="160" height="18" rx="9" fill="#14556b" opacity="0.22" />
+  <rect x="72" y="292" width="456" height="52" rx="26" fill="#ffffff" stroke="#d8e2e7" stroke-width="8" />
+  <text x="300" y="326" fill="#14556b" font-family="Arial, sans-serif" font-size="30" font-weight="700" text-anchor="middle">Brand System</text>
+</svg>

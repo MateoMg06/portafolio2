@@ -1,71 +1,187 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mi portafolio</title>
-    <link rel="stylesheet" href="style/style.css">
+    <title>Mateo Portafolio</title>
+    <link rel="stylesheet" href="style/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header>
-      <div class="nav_bar">
-        <img
-          src="https://img.pikbest.com/png-images/20241022/stealth-masked-hacker-gaming-logo-for-gamers_10991543.png!w700wp"
-          alt=""
-          id="nav_logo"
-        />
-        <nav>
-          <ul>
-            <li><a href="#project">Projects</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#caseStudies">Case Studies</a></li>
-            <li><a href="#Contact">Contact</a></li>
-            <button id="btn">Hablemos</button>
+    <div class="welcome-banner" id="welcomeMessage" role="status" aria-live="polite"></div>
+
+    <header class="site-header">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdkKczEVoRBlF0YGgLHhRSr9Z7kajMZfOzKQ&s"
+            alt="Imagen personal de Mateo"
+            class="brand__logo"
+          />
+          <span>Mateo Portafolio</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Navegacion principal">
+          <ul class="nav-list">
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#about">Sobre mi</a></li>
+            <li><a href="mascotas.html">Mascotas</a></li>
+            <li><a href="#contact">Contacto</a></li>
           </ul>
         </nav>
+
+        <button class="button button-secondary" id="contactButton" type="button">
+          Hablemos
+        </button>
       </div>
     </header>
+
     <main>
-      <section id="hero_section">
-        <div class="hero">
-          <h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-            impedit tempora error maxime voluptatibus. Dolorum minus soluta
-            iusto eaque laborum vero aspernatur repellendus quae ut, voluptate
-            laudantium aut illum obcaecati.
-          </h1>
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora,
-            nihil!
-          </p>
+      <section class="hero-section">
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow">Diseno web | Frontend | UI sencilla</p>
+            <h1>Hola, soy Mateo y creo paginas web simples, claras y personales.</h1>
+            <p class="hero-text" id="dynamicText">
+              Me gusta trabajar con disenos limpios, buena organizacion y una experiencia
+              facil de recorrer en cualquier pantalla.
+            </p>
+
+            <div class="button-row">
+              <button class="button" id="changeTextButton" type="button">
+                Conoce mas sobre mi
+              </button>
+              <a class="button button-secondary" href="#projects">Ver proyectos</a>
+            </div>
+          </div>
+
+          <article class="card hero-card">
+            <img
+              src="img/oficina.jpg"
+              alt="Mesa de trabajo lista para planear un proyecto web"
+            />
+            <div class="hero-card__content">
+              <h2>Mi enfoque</h2>
+              <p>
+                Busco que cada sitio se vea bien, sea facil de entender y transmita una idea
+                clara desde el primer vistazo.
+              </p>
+            </div>
+          </article>
         </div>
       </section>
-      <section id="perfil">
-        <div class="texto_img">
-          <div class="perfil_img">
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="section-label">Proyectos</p>
+              <h2>Algunos trabajos</h2>
+            </div>
+            <p class="section-copy">
+              Una muestra corta del tipo de paginas e interfaces que me gusta crear.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="card project-card">
+              <img src="img/project-dashboard.svg" alt="Vista previa de un dashboard editorial" />
+              <div class="card-content">
+                <span class="card-tag">Dashboard</span>
+                <h3>Panel de contenido</h3>
+                <p>Una interfaz ordenada para mostrar datos y contenido de forma clara.</p>
+              </div>
+            </article>
+
+            <article class="card project-card">
+              <img src="img/project-ux.svg" alt="Vista previa de una aplicacion movil" />
+              <div class="card-content">
+                <span class="card-tag">Mobile</span>
+                <h3>Interfaz para celular</h3>
+                <p>Una propuesta sencilla para pantallas pequenas y lectura comoda.</p>
+              </div>
+            </article>
+
+            <article class="card project-card">
+              <img src="img/project-brand.svg" alt="Vista previa de una identidad visual" />
+              <div class="card-content">
+                <span class="card-tag">Identidad</span>
+                <h3>Base visual de marca</h3>
+                <p>Color, tipografia y composicion para darle personalidad a un proyecto.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container about-grid">
+          <div class="about-image">
             <img
               id="imagen_ejemplo"
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdkKczEVoRBlF0YGgLHhRSr9Z7kajMZfOzKQ&s"
-              alt=""
+              alt="Foto de perfil del portafolio"
             />
           </div>
-          <div class="texto">
-            <h2>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis
-              facere ducimus consectetur eius iure ipsa suscipit eum, deserunt
-              esse aut sit sed, consequatur, perferendis illo cumque assumenda
-              delectus non quia.
-            </h2>
+
+          <div class="about-copy">
+            <p class="section-label">Sobre mi</p>
+            <h2>Me gusta crear sitios que se vean bien y se entiendan rapido.</h2>
+            <p>
+              Prefiero los disenos limpios, los textos directos y las interfaces que no
+              complican al usuario.
+            </p>
+            <p>
+              Este portafolio es una forma simple de mostrar mi estilo y lo que me gusta
+              construir.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="section-label">Contacto</p>
+              <h2>Si quieres hablar conmigo, aqui estoy.</h2>
+            </div>
+            <p class="section-copy">
+              Estoy disponible para proyectos personales, ideas nuevas o colaboraciones.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <article class="card contact-card">
+              <h3>Contacto directo</h3>
+              <ul class="list-clean">
+                <li>Correo: mateo.portafolio@email.com</li>
+                <li>Ciudad: Bogota, Colombia</li>
+                <li>Disponibilidad: proyectos personales y colaboraciones</li>
+              </ul>
+            </article>
+
+            <article class="card contact-card">
+              <h3>Mas sobre mi</h3>
+              <p>Tambien puedes visitar la seccion de mascotas para ver una parte mas personal del sitio.</p>
+              <a class="button" href="mascotas.html">Ver mascotas</a>
+            </article>
           </div>
         </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Mateo Portafolio</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

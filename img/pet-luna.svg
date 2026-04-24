@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <rect width="600" height="600" rx="48" fill="#f7efe3" />
+  <path d="M170 168 228 74l58 132Z" fill="#f2b980" />
+  <path d="M430 168 372 74l-58 132Z" fill="#f2b980" />
+  <circle cx="300" cy="286" r="168" fill="#ffd7ad" />
+  <circle cx="240" cy="276" r="18" fill="#22313a" />
+  <circle cx="360" cy="276" r="18" fill="#22313a" />
+  <ellipse cx="300" cy="334" rx="42" ry="28" fill="#f28c45" />
+  <path d="M248 372c18 22 42 34 52 34s34-12 52-34" fill="none" stroke="#22313a" stroke-linecap="round" stroke-width="14" />
+  <text x="300" y="548" fill="#14556b" font-family="Arial, sans-serif" font-size="48" font-weight="700" text-anchor="middle">Luna</text>
+</svg>

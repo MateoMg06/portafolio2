@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <rect width="600" height="600" rx="48" fill="#fbf4e8" />
+  <path d="M150 210 214 92l86 156Z" fill="#d7b48c" />
+  <path d="M450 210 386 92l-86 156Z" fill="#d7b48c" />
+  <circle cx="300" cy="304" r="172" fill="#e7c9a3" />
+  <circle cx="236" cy="290" r="18" fill="#22313a" />
+  <circle cx="364" cy="290" r="18" fill="#22313a" />
+  <ellipse cx="300" cy="346" rx="44" ry="32" fill="#22313a" />
+  <circle cx="282" cy="342" r="9" fill="#fffdf9" />
+  <circle cx="318" cy="342" r="9" fill="#fffdf9" />
+  <path d="M242 394c18 20 40 34 58 34s40-14 58-34" fill="none" stroke="#22313a" stroke-linecap="round" stroke-width="14" />
+  <text x="300" y="548" fill="#14556b" font-family="Arial, sans-serif" font-size="48" font-weight="700" text-anchor="middle">Bruno</text>
+</svg>
